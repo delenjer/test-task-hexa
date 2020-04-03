@@ -1,0 +1,48 @@
+.header {
+  padding: 10px 0;
+  background-color: #fff;
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__text {
+    display: inline-block;
+    width: 210px;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $main-color;
+    padding-left: 32px;
+  }
+
+  &__tel {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: $main-color;
+    padding-right: 18px;
+  }
+
+  &__btn {
+    display: inline-block;
+    padding: 11px 10px;
+    background-color: #ff8200;
+    background-image: $btn-gradient;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: $btn-text-color;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+}
+
+.header .wrapper {
+  @include flex-space-between;
+}

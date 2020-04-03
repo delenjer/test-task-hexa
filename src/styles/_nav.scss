@@ -1,0 +1,36 @@
+.nav {
+  background-color: $nav-bg;
+
+  &__list {
+    @include flex-content-center;
+  }
+
+  &__item {
+    position: relative;
+    padding: 13px 64px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 1px;
+      height: 16px;
+      background-color: #ccc;
+    }
+  }
+
+  &__link {
+    display: block;
+    font-family: "Proxima Nova Light", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $nav-link-color;
+    transition: 0.5s;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
