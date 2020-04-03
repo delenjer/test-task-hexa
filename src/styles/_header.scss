@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0;
+  padding: 15px 0 8px;
   background-color: #fff;
 
   &__item {
@@ -11,10 +11,11 @@
     display: inline-block;
     width: 210px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 700;
+    line-height: 130%;
     text-transform: uppercase;
     color: $main-color;
-    padding-left: 32px;
+    padding-left: 20px;
   }
 
   &__tel {
@@ -23,7 +24,7 @@
     line-height: 21px;
     text-transform: uppercase;
     color: $main-color;
-    padding-right: 18px;
+    margin-right: 17px;
   }
 
   &__btn {

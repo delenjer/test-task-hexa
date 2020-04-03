@@ -1,0 +1,26 @@
+.info {
+  opacity: 0.8;
+  background-color: #fff;
+  padding: 23px;
+
+  &__list {
+    @include flex-space-between;
+  }
+
+  &__item {
+    width: 23.4%;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 18px;
+  }
+}

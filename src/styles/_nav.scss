@@ -7,30 +7,39 @@
 
   &__item {
     position: relative;
-    padding: 13px 64px;
+    padding: 0 58px;
 
     &::after {
       content: "";
       position: absolute;
       top: 50%;
+      transform: translate(0, -50%);
       right: 0;
       width: 1px;
       height: 16px;
       background-color: #ccc;
     }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   &__link {
+    font-family: "Proxima Nova Rg", sans-serif;
     display: block;
-    font-family: "Proxima Nova Light", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    letter-spacing: 1px;
     text-transform: uppercase;
     color: $nav-link-color;
-    transition: 0.5s;
+    padding: 13px 0 10px;
+    transition: 0.3s;
 
     &:hover {
-      font-weight: 700;
+      text-shadow: 0.5px 0 0;
     }
   }
 }
