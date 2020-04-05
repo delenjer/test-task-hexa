@@ -1,9 +1,8 @@
 'use strict';
 
 // eslint-disable-next-line no-unused-vars,no-undef
-const swiper = new Swiper('.swiper-container, .swiper-container2', {
+const swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
-  effect: 'fade',
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

@@ -14,13 +14,13 @@
       position: absolute;
       top: 50%;
       transform: translate(0, -50%);
-      right: 0;
+      left: 0;
       width: 1px;
       height: 16px;
       background-color: #ccc;
     }
 
-    &:last-child {
+    &:first-child {
       &::after {
         display: none;
       }
@@ -40,6 +40,22 @@
 
     &:hover {
       text-shadow: 0.5px 0 0;
+    }
+  }
+
+  @media screen and (max-width: 1190px) {
+    &__item {
+      padding: 0 30px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__list {
+      display: none;
     }
   }
 }
