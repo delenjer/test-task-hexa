@@ -137,8 +137,48 @@ h1 {
     .nav__link {
       font-size: 12px; } }
   @media screen and (max-width: 768px) {
-    .nav__list {
-      display: none; } }
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      z-index: 12; }
+      .nav__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        padding: 0;
+        margin-bottom: 15px;
+        height: 80%; }
+      .nav__item {
+        padding: 0; }
+        .nav__item::after {
+          display: none; }
+      .nav__link {
+        font-size: 17px; } }
+
+.close,
+.menu-box {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  .hide-nav {
+    display: none; }
+  .show-nav {
+    display: block; }
+  .menu-box {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px; }
+  .close {
+    display: block;
+    padding: 10px; } }
 
 .slider {
   position: absolute;
@@ -593,12 +633,5 @@ a {
     z-index: -1;
     -webkit-transform: skew(-15deg);
             transform: skew(-15deg); }
-
-.burger-menu {
-  display: none; }
-  @media screen and (max-width: 768px) {
-    .burger-menu {
-      display: block;
-      padding: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
