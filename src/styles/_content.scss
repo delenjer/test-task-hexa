@@ -1,11 +1,10 @@
 .content {
   position: relative;
-  padding-top: 30px;
-  flex-basis: calc(100% - 60px);
+  padding-top: 5px;
 
   &__title {
     display: inline-block;
-    font-family: "Intro", sans-serif;
+    font-family: $content-main-fonts;
     font-size: 90px;
     font-weight: 900;
     text-transform: uppercase;
@@ -15,7 +14,7 @@
   }
 
   &__slider {
-    font-family: "Intro", sans-serif;
+    font-family: $content-main-fonts;
   }
 
   &__article {
@@ -92,7 +91,7 @@
     line-height: 120%;
     text-transform: uppercase;
     color: #fff;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
 
   &__btn {
@@ -110,7 +109,8 @@
     color: #fff;
     transition: 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 0 10px rgba(255,255,255, 0.7);
     }
   }

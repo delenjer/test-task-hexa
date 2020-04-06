@@ -18,7 +18,7 @@
   }
 
   &__title {
-    font-family: "Proxima Nova Rg", sans-serif;
+    font-family: $info-title-fonts;
     font-size: 22px;
     font-weight: 600;
     margin-top: 14px;
@@ -51,7 +51,6 @@
   }
 
   @media screen and (max-width: 768px) {
-    //display: none;
     background-color: inherit;
     color: #fff;
     &__list {

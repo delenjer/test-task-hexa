@@ -25,6 +25,12 @@
     text-transform: uppercase;
     color: $main-color;
     margin-right: 17px;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+      text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
   }
 
   &__btn {
@@ -38,7 +44,8 @@
     color: $btn-text-color;
     transition: 0.3s;
 
-    &:hover {
+    &:hover,
+    &:focus {
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
   }
