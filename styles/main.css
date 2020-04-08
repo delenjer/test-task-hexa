@@ -550,7 +550,8 @@ body {
   overflow: hidden; }
   @media screen and (max-width: 768px) {
     body {
-      overflow-y: scroll; } }
+      overflow-y: scroll;
+      background-color: rgba(0, 0, 0, 0.9); } }
 
 a {
   text-decoration: none; }
@@ -600,8 +601,7 @@ a {
       height: calc(100vh - 48px); } }
   @media screen and (max-width: 768px) {
     .main {
-      height: calc(100vh - 69px);
-      background-color: rgba(0, 0, 0, 0.9); } }
+      height: calc(100vh - 69px); } }
 
 .num {
   font-size: 45px;
